@@ -1,0 +1,135 @@
+<!DOCTYPE html>  
+<html>  
+<head>
+    <title>
+        Registration Form
+    </title>
+  
+<style>
+   
+.container {  
+    padding: 50px;  
+  background-color: #42a5a8;
+  border:groove;
+  border-color:black;
+}  
+  
+input[type=text], input[type=password], textarea {  
+  width: 100%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+  border: none;  
+  background: #f1f1f1;  
+}  
+input[type=text]:focus, input[type=password]:focus {  
+   
+  outline: none;  
+}  
+ div {  
+            padding: 10px 0;  
+         }  
+hr {  
+  border: 1px solid #f1f1f1;  
+  margin-bottom: 25px;  
+}
+    .registerbtn {
+        background-color: #51b2ca;
+        color: white;
+        padding: 16px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        opacity: 0.9;
+    }  
+.registerbtn:hover {  
+  opacity: 1;  
+}  
+</style>  
+</head>  
+<body>
+  
+<form>  
+    <div class="container">
+        <center>  <h1>Registration Form</h1> </center>
+        <hr>
+        <label> Firstname </label>
+        <input type="text" name="firstname" placeholder="Firstname" size="5" />
+
+        <label> Lastname: </label>
+        <input type="text" name="lastname" placeholder="Lastname" size="5" r />
+        <div>
+            <label>
+                Select Branch :
+            </label>
+
+            <select>
+                <option value="Course">Branch</option>
+                <option value="BCA">CSE-A</option>
+                <option value="BBA">CSE-B</option>
+                <option value="B.Tech">CSE-C</option>
+                <option value="MBA">CYS</option>
+                <option value="MCA">AIE</option>
+                <option value="M.Tech">CCE</option>
+                <option value="MCA">Mech</option>
+                <option value="MCA">ECE</option>
+            </select>
+        </div>
+        <div>
+            <label>
+                Select Country
+            </label>
+
+            <select>
+                <option value="Course">Country</option>
+                <option value="BCA">India</option>
+                <option value="BBA">USA</option>
+                <option value="B.Tech">Russia</option>
+                <option value="MBA">UK</option>
+                <option value="MCA">Australia</option>
+                <option value="M.Tech">Sri Lanka</option>
+                <option value="MCA">China</option>
+                <option value="MCA">Bangladesh</option>
+            </select>
+        </div>
+
+        <div>
+            <label>
+                Gender :
+            </label><br>
+            <input type="radio" value="Male" name="gender" checked> Male
+            <input type="radio" value="Female" name="gender"> Female
+            <input type="radio" value="Other" name="gender"> Other
+
+        </div>
+        <div>
+            <label>
+             date of birth :
+            </label><br>
+            <input type="date" name="dob" id="do">
+
+        </div>
+        <label>
+            Phone :
+        </label>
+
+        <input type="text" name="phone" placeholder="Phone no." size="50" />
+        Current Address :
+<textarea cols="80" rows="5" placeholder="Current Address" value="address">  
+</textarea>
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email">
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw">
+
+        <label for="psw-repeat"><b>Re-type Password</b></label>
+        <input type="password" placeholder="Retype Password" name="psw-repeat">
+        <button type="submit" class="registerbtn">Register</button>
+</form>
+
+<button><a href="index.html"><font color="black", size="2">Home</font></button></a>
+
+</body>  
+</html>
