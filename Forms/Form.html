@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Registration form 
+    </title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url(amrita.jpg);
+            background-repeat: no-repeat;
+            background-position: top;
+            background-size: cover;
+            font-family: sans-serif;
+            margin-top: 20px;2.
+        }
+        .regform {
+            width: 800px;
+            background-color: rgba(134, 116, 116, 0.6);
+            margin: auto;
+            color: whitesmoke;
+            padding: 10px 0px 10px 0px;
+            text-align: center;
+            border-radius: 15px 15px 0px 0px;
+        }
+
+        .main {
+            background-color: rgb(0, 0, 0, 0.5);
+            width: 800px;
+            margin: auto;
+            color: lightgrey;
+        }
+
+        form {
+            padding: 50px;
+        }
+    </style>
+
+</head>
+<body>
+    <a href="https://www.amrita.edu/"><img src="avv.jpeg" height="50%" width="150px"></a>
+    <div class="regform">
+        <h1><b>CYBER NATION 2022</b></h1>
+    </div>
+    <div class="main">
+        <form>
+            
+                <div>
+                    <h2 align="center">Fill the form to register</h2>
+                    <br><br>
+                    <b>Name : </b><input type="text" name="student name" placeholder="First Name" required /> <input
+                        type="text" name="student name" placeholder="Last Name" /><br><br>
+                    <b>Moblie Number : </b><input type="text" pattern=[0-9]{10} name="moblie number" required /><br><br>
+                    <b>Date of birth : </b><input type="date" name="dob" /><br><br>
+                    <b>Gender</b> : <input type="radio" name="gender" id="f" />
+                    <label for="f"> Female</label>
+                    <input type="radio" name="gender" id="m" />
+                    <label for="m"> Male</label><br><br>
+                    <b>Organization : </b><input type="text" name="college" placeholder="Organization name"
+                        required /><br><br>
+                    <b>Email : </b><input type="text" name="email" placeholder="xxyyzz@gmail.com" required /><br><br>
+                    <b><label for="user_pass">Password : </label></b>
+                    <input type="password" name="Password" minlength="8" id="user_pass" required />
+                    <br><br>
+                    <b>Profession : </b><select name="Profession">
+                        <option value="Amrita" selected>Select</option>
+                        <option value="student">Student</option>
+                        <option value="Faculty">Faculty</option>
+                        <option value="Researcher">Research Scholars</option>
+                        <option value="Industry person">Industry Person</option>
+                    </select>
+                    <br><br>
+                    <div>
+                        <label>
+                            Select Year(if student) :
+                        </label>
+                        <select>
+                            <option value="Course">Year</option>
+                            <option value="B tech">1st year</option>
+                            <option value="B tech">2nd year</option>
+                            <option value="B tech">3rd year</option>
+                            <option value="B tech">4th year</option>
+                            </select>
+                    </div>
+                        <br>
+                    <div>
+                        <label>
+                            Select Branch :
+                        </label>
+                        <select>
+                            <option value="Course">Branch</option>
+                            <option value="B tech">CSE</option> 
+                            <option value="B tech">CYS</option>
+                            <option value="B tech">AIE</option>
+                            <option value="B tech">CCE</option>
+                            <option value="B tech">ECE</option>
+                            <option value="B tech">Mech</option>
+                        </select>
+                    </div>
+                    <br>
+                    <b><label for="up">ID Proof  : </b></label><input type="file" name="upload" id="up" /><br><br>
+                    <b><label for="feed">Address : <b></label><textarea rows="3" cols="30" name="feedback"
+                            id="feed"></textarea><br><br>
+                        <b>Events : </b><br><input type="checkbox" name="event" id="1">
+                        <label for="1">Cyber Conclave (1st oct)</label>
+                        <br>
+                        <input type="checkbox" name="event" id="2" />
+                        <label for="2">Cyber Industry Meet (8th oct)</label>
+                        <br>
+                        <input type="checkbox" name="event" id="3" />
+                        <label for="3">Cyber Tech Fest22 (29th & 30th oct)</label>
+                        <br>
+                        <input type="checkbox" name="event" id="4" />
+                        <label for="4">Cyber Abyaan22 (5th-8th nov)</label><br><br>
+                        <center>
+                        <input type="submit" name="submit" value="   Submit   " />
+                        <input type="reset" name="reset" value="   Reset   "/>
+                    </center>
+        </form>
+    </div>
+</body>
+
+</html>
+    
