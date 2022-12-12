@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Registration form 
+    </title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url(rfbg.jpg);
+            background-repeat: no-repeat;
+            background-position: top;
+            background-size: cover;
+            font-family: sans-serif;
+            margin-top: 20px;
+        }
+        .regform {
+            width: 600px;
+            background-color: rgba(134, 116, 116, 0.6);
+            margin: auto;
+            color: whitesmoke;
+            float:left;
+            text-align: center;
+            border-radius: 15px 15px 0px 0px;
+        }
+
+        .main {
+            background-color: rgb(0, 0, 0, 0.5);
+            width: 600px;
+            margin: auto;
+            color: lightgrey;
+			float:left;
+			border-radius: 10px;
+			padding-left: 10px;
+        }
+
+        form {
+            padding-left: 50px;
+        }
+    </style>
+
+</head>
+<body>
+<br>
+<br><br>
+    <div class="regform">
+        
+		
+    </div>
+	<br>
+	<br>
+    <div class="main">
+        <form>
+            
+                <div>
+                    <h2 style= "text-align:center;">Fill the form to register</h2>
+                    <br><br>
+                    <b>Name : </b><input type="text" name="student name" placeholder="First Name" required /> <input
+                        type="text" name="student name" placeholder="Last Name" /><br><br>
+                    <b>Moblie Number : </b><input type="text" pattern=[0-9]{10} name="moblie number" required /><br><br>
+                    <b>Date of birth : </b><input type="date" name="dob" /><br><br>
+                    <b>Gender</b> : <input type="radio" name="gender" id="f" />
+                    <label for="f"> Female</label>
+                    <input type="radio" name="gender" id="m" />
+                    <label for="m"> Male</label><br><br>
+                    <b>Organization : </b><input type="text" name="college" placeholder="Organization name"
+                        required /><br><br>
+                    <b>Email : </b><input type="text" name="email" placeholder="xxyyzz@gmail.com" required /><br><br>
+                    <b><label for="user_pass">Password : </label></b>
+                    <input type="password" name="Password" minlength="8" id="user_pass" required />
+                    <br><br>
+					<h3> <label>Pincode </label>
+					
+						<input type="text" pattern="[0-9]{6}" required name="PINCODE"/>
+						<br>
+					<br>
+			<h3> <LABEL> Mother language </LABEL>
+						<select name="MOTHER LANGUAGE" id ="LANGUAGE">
+							<option value="NONE" SELECTED disabled hidden > </option>
+							<option value="TELUGU"> TELUGU  </option>
+							<option value="HINDI" > HINDI  </option>
+							<option value="ENGLISH"> ENGLISH </option>
+							<option value="TAMIL"> TAMIL </option>
+							<option value="MALAYALAM"> MALAYALAM </option>
+							<option value="KANNADA"> KANNADA </option>
+							</SELECT>
+							<br>
+							<br>
+					<h3>Country
+						<select name="country" id ="country">
+							<option value="none"  disabled hidden></option> 
+							<option value="INDIA"  selected>INDIA</option> 
+							<option value="SRI LANKA" >SRI LANKA</option> 
+							<option value="AFGHANISTAN" >AFGHANISTAN</option> 
+							<option value="PAKISTHAN" >PAKISTHAN</option> 
+							<option value="USA" >USA</option> 
+							<option value="UK" >UK</option> 
+							<option value="FRANCE" >FRANCE</option> 
+							<option value="GERMANY" >GERMANY</option> 
+							<option value="RUSSIA"> RUSSIA</option> 
+							<option value="JAPAN" >JAPAN</option> 
+							<option value="KOREA" >KOREA</option> </SELECT>
+					<br>
+					<br>
+                    <b>Profession : </b><select name="Profession">
+                        <option value="Amrita" selected>Select</option>
+                        <option value="student">Student</option>
+                        <option value="Faculty">GOVT.job</option>
+                        <option value="Researcher">Private Job</option>
+                        
+                    </select>
+                    <br><br>
+                    <div>
+                        <label>
+                            Select Year(if student) :
+                        </label>
+                        <select>
+                            <option value="Course">Year</option>
+                            <option value="B tech">1st year</option>
+                            <option value="B tech">2nd year</option>
+                            <option value="B tech">3rd year</option>
+                            <option value="B tech">4th year</option>
+                            </select>
+                    </div>
+                        <br>
+                    <div>
+                        <label>
+                            Select Branch :
+                        </label>
+                       
+                    </div>
+                    <br>
+                    <b><label for="up">ID Proof  : </b></label><input type="file" name="upload" id="up" /><br><br>
+                    <b><label for="feed">Address : <b></label><textarea rows="3" cols="30" name="feedback"
+                            id="feed"></textarea><br><br>
+                        <br><br>
+                        <center>
+                        <input type="submit" name="submit" value="   Submit   " />
+                        <input type="reset" name="reset" value="   Reset   "/>
+                    </center>
+        </form>
+    </div>
+</body>
+
+</html>
+    

@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Signup.css">
+    <script defer src="Signup.js"></script>
+	 <script defer src="capcha.js"></script>
+	
+</head>
+<body>
+    <div class="container">
+        <form id="form" action="/">
+            <h1>Registration</h1>
+            <div class="input-control">
+                <label for="username">Username</label>
+                <input id="username" name="username" type="text">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="text">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="password">Password</label>
+                <input id="password"name="password" type="password">
+                <div class="error"></div>
+            </div>
+			
+            <div class="input-control">
+                <label for="password2">Password again</label>
+                <input id="password2"name="password2" type="password">
+                <div class="error"></div>
+            </div>
+			 <div class="input-control">
+            <label for="phoneNumber">Phone Number</label><br>
+            <input type="text"
+                    id="phoneNumber"
+                    name="phoneNumber"
+                    placeholder="Enter Phone Number"required>
+					  <div class="error"></div>
+          </div>
+		  <div class="input-control">
+		  <label for="DOB">Date of Birth:</label>
+ <input type="date" id="DOB" name="DOB"required>
+   <div class="error"></div>
+		  </div>
+			<div >
+			 <span>Gender</span><br>
+			<input type="radio" name="gender" id="male" required>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="other">
+            <label for="other">Other</label>
+			  <div class="error"></div>
+			</div>
+			<div id="captchaBackground" class="input-control">
+            <canvas id="captcha">captcha text</canvas>
+            <input id="textBox" type="text" name="text">
+            <div id="buttons">
+                <input id="submitButton" type="submit">
+				
+                <button id="refreshButton" type="submit">Refresh</button>
+            </div>
+			
+            <span id="output"></span>
+        </div>
+		<br>
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+</body>
+</html>
