@@ -1,0 +1,108 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Century Gothic;
+}
+
+header{
+	background-image: url(../mpbg1.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+}
+
+ul{
+	float: right;
+	list-style-type: none;
+	margin-top: 25px;
+}
+
+ul li{
+	display: inline-block;
+}
+
+ul li a{
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 20px;
+	border: 1px solid transparent;
+	transition: 0.6s ease;
+}
+
+ul li a:hover{
+	background-color:#fff;
+	color:#000;
+}
+ul li.active a{
+	background-color:#fff;
+	color:#000;
+}
+
+.main{
+	max-width: 1200px;
+	margin: auto;
+}
+
+h1.view{
+	font-family: Copperplate;
+	font-size: 50px;
+	padding-left: 700px;
+}
+
+p{
+	font-size: 30px;
+}
+
+pre.jest{
+	font-size:120px;
+	padding-left:550px;
+	padding-top:350px;
+	color: #fff;
+	font-weight: 600;
+	font-family: 'poppins', sans-serif;
+	transition: 0.2s;
+}
+
+pre.jest:hover{
+	-webkit-text-stroke: 2px #fff;
+	color: transparent;
+}
+
+img.logo{
+	float: left;
+	width: 180px;
+	height: auto;
+}
+
+p.cric{
+	font-size:50px;
+	padding-left:620px;
+	padding-top:3500px;
+	color: #fff;
+	font-weight: 600;
+	font-family: 'poppins', sans-serif;
+	transition: 0.2s;
+}
+
+div.info{
+	background-color:skyblue;
+	
+}
+img.cen{
+	padding-left:350px;
+}
+
+pre.quote{
+	color: #fff;
+	font-family: 'poppins', sans-serif;
+	transition: 0.2s;
+	padding-left: 400px;
+	font-size: 20px;
+	
+}
+
+pre.quote:hover{
+	-webkit-text-stroke: 2px #fff;
+	color: transparent;
+}
+
